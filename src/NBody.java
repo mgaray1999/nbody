@@ -14,7 +14,7 @@ public class NBody {
 		}
 
 		// Read simulation data from file
-		Planet[] planets = null; // readPlanets(pfile);
+		Body[] planets = null; // readBodies(pfile);
 		double radius = 0.0; // readRadius(pfile);
 
 		// TODO Draw the background

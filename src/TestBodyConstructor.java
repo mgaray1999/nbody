@@ -1,13 +1,13 @@
 /**
- *  Tests the Planet constructor.
+ *  Tests the Body constructor.
  */
-public class TestPlanetConstructor {
+public class TestBodyConstructor {
 
     /**
-     *  Tests the Planet constructor to make sure it's working correctly.
+     *  Tests the Body constructor to make sure it's working correctly.
      */
     public static void main(String[] args) {
-        checkPlanetConstructor();
+        checkBodyConstructor();
     }
 
     /**
@@ -40,11 +40,11 @@ public class TestPlanetConstructor {
     }
 
     /**
-     *  Checks Planet constructors to make sure they are setting instance
+     *  Checks Body constructors to make sure they are setting instance
      *  variables correctly.
      */
-    private static void checkPlanetConstructor() {
-        System.out.println("Checking Planet constructor...");
+    private static void checkBodyConstructor() {
+        System.out.println("Checking Body constructor...");
 
         double xxPos = 1.0,
                yyPos = 2.0,
@@ -54,7 +54,7 @@ public class TestPlanetConstructor {
 
         String imgFileName = "jupiter.gif";
 
-        Planet p = new Planet(xxPos, yyPos, xxVel, yyVel, mass, imgFileName);
+        Body p = new Body(xxPos, yyPos, xxVel, yyVel, mass, imgFileName);
 
         checkEquals(xxPos, p.myXPos, "x");
         checkEquals(yyPos, p.myYPos, "y");
@@ -63,7 +63,7 @@ public class TestPlanetConstructor {
         checkEquals(mass, p.myMass, "mass");
         checkStringEquals(imgFileName, p.myFileName, "path to image");
 
-        Planet pCopy = new Planet(p);
+        Body pCopy = new Body(p);
         checkEquals(p.myXPos, pCopy.myXPos, "x");
         checkEquals(p.myYPos, pCopy.myYPos, "y");
         checkEquals(p.myXVel, pCopy.myXVel, "xVelocity");
