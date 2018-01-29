@@ -1,13 +1,38 @@
-Name: [firstname lastname]
-NetID: [abc123]
-Hours Spent: [Give an exact (decimal) number here]
-Consulted With: [Provide a comma-separated list of the NetIDs of any students, TAs, or professors you consulted with on the assignment. If you did not consult with anyone, you must explicitly write NONE.]
-Resources Used: [Any books, papers, or online resources. If you did not use any outside resources, you must explicitly write NONE]
+Name: Miguel Garay
+NetID: meg89
+Hours Spent: 3.0
+Consulted With: ck214, mi46
+Resources Used: stackoverflow.com
 %%%%
-Impressions: [Your answer here]
+Impressions: This is a cool project.
 %%%%
 Question 1: What is the final position of the planets after 1,000,000 and 
 2,000,000 seconds with a timestep of 25,000 using planets.txt?
+
+FOR 1 MILLION SECONDS
+
+5
+2.50e+11
+ 1.4642e+11  3.0333e+10 -6.0385e+03  2.9196e+04  5.9740e+24    earth.gif
+ 2.2653e+11  2.4654e+10 -2.6137e+03  2.3962e+04  6.4190e+23     mars.gif
+ 3.7730e+10  4.3365e+10 -3.6249e+04  3.1843e+04  3.3020e+23  mercury.gif
+ 2.8151e+04  3.2066e+03  5.2968e-02  9.0936e-03  1.9890e+30      sun.gif
+ 1.0215e+11  3.5220e+10 -1.1426e+04  3.3133e+04  4.8690e+24    venus.gif
+ 
+FOR 2 MILLION SECONDS
+ 
+5
+2.50e+11
+ 1.3745e+11  5.8722e+10 -1.1697e+04  2.7436e+04  5.9740e+24    earth.gif
+ 2.2262e+11  4.8429e+10 -5.1355e+03  2.3555e+04  6.4190e+23     mars.gif
+-7.1867e+09  5.6955e+10 -4.8011e+04 -5.4187e+03  3.3020e+23  mercury.gif
+ 1.0466e+05  2.3844e+04  9.7192e-02  3.3755e-02  1.9890e+30      sun.gif
+ 8.5462e+10  6.5891e+10 -2.1418e+04  2.7799e+04  4.8690e+24    venus.gif
+
+
 %%%%
-Question 2: For what values of timeStep, does the simulation no longer behave correctly? 
+Question 2: For what values of timeStep, does the simulation no longer behave correctly?
+
+When the timeStep value is excessively high, the positions of the planets and their velocities
+change so drastically at each point that some planets collide and move out of orbit. 
 %%%%
